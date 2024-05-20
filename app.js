@@ -15,6 +15,7 @@ app.set('view engine', 'ejs');
 // Middleware
 app.use(express.json());
 
+
 // Database connection
 connectToDatabase();
 

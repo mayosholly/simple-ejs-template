@@ -26,10 +26,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                
+                                <%  posts.forEach((post, index) => { %>
+
+                             
                                 <tr>
-                                    <td>1</td>
-                                    <td>Post 1</td>
-                                    <td>Post 1 Description</td>
+                                    <td><%= index + 1  %></td>
+                                    <td><%= post.title  %></td>
+                                    <td><%=  post.description  %></td>
                                     <td>
                                         <div style="display: flex;">
                                             <a href="/posts/edit" class="btn btn-sm btn-primary mx-2">Edit</a>
@@ -39,19 +43,8 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Post 2</td>
-                                    <td>Post 2 Description</td>
-                                    <td>
-                                        <div style="display: flex;">
-                                            <a href="/posts/edit" class="btn btn-sm btn-primary mx-2">Edit</a>
-                                            <form action="">
-                                                <button class="btn btn-sm btn-danger">Delete</button>
-                                            </form>
-                                        </div>
-                                    </td>
-                                </tr>
+                               
+                              <% })  %> 
                                 <!-- Add more rows as needed -->
                             </tbody>
                         </table>
