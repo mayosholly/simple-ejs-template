@@ -1,0 +1,42 @@
+# Node.js and Express
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore environment variables file
+.env
+
+# Ignore build directories and files
+dist/
+build/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files (TypeScript, CoffeeScript, etc.)
+*.tsbuildinfo
+*.coffee
+
+# Ignore coverage reports
+coverage/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore package-lock.json (you may want to keep this file depending on your team's preferences)
+# package-lock.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files and directories
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore backup files
+*.bak
+
+
